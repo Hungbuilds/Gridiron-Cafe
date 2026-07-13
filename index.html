@@ -3,8 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gridiron Cafe — Crystal City & Carrizo Springs</title>
+<title>Gridiron Cafe — Coffee & Food in Crystal City & Carrizo Springs, TX</title>
+<meta name="description" content="Gridiron Cafe serves coffee, frappes, breakfast, deli sandwiches, salads, wings and more in Crystal City and Carrizo Springs, TX. Same menu, two locations.">
+<link rel="canonical" href="https://hungbuilds.github.io/Gridiron-Cafe/">
+<link rel="icon" type="image/png" href="images/badge-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gridiron Cafe — Coffee & Food in Crystal City & Carrizo Springs, TX">
+<meta property="og:description" content="Gridiron Cafe serves coffee, frappes, breakfast, deli sandwiches, salads, wings and more in Crystal City and Carrizo Springs, TX. Same menu, two locations.">
+<meta property="og:image" content="https://hungbuilds.github.io/Gridiron-Cafe/images/hero-toast.jpg">
+<meta property="og:url" content="https://hungbuilds.github.io/Gridiron-Cafe/">
+<meta property="og:site_name" content="Gridiron Cafe">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gridiron Cafe — Coffee & Food in Crystal City & Carrizo Springs, TX">
+<meta name="twitter:description" content="Gridiron Cafe serves coffee, frappes, breakfast, deli sandwiches, salads, wings and more in Crystal City and Carrizo Springs, TX. Same menu, two locations.">
+<meta name="twitter:image" content="https://hungbuilds.github.io/Gridiron-Cafe/images/hero-toast.jpg">
+
+<meta name="theme-color" content="#0D0D0D">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CafeOrCoffeeShop",
+      "name": "Gridiron Cafe - Crystal City",
+      "image": "https://hungbuilds.github.io/Gridiron-Cafe/images/crystal-1.jpg",
+      "telephone": "+1-830-448-5051",
+      "priceRange": "$",
+      "servesCuisine": ["Coffee", "Cafe", "American"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2206 US-83",
+        "addressLocality": "Crystal City",
+        "addressRegion": "TX",
+        "postalCode": "78839",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "06:30", "closes": "20:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "19:00"}
+      ],
+      "url": "https://hungbuilds.github.io/Gridiron-Cafe/"
+    },
+    {
+      "@type": "CafeOrCoffeeShop",
+      "name": "Gridiron Cafe - Carrizo Springs",
+      "image": "https://hungbuilds.github.io/Gridiron-Cafe/images/carrizo-full.jpg",
+      "telephone": "+1-830-219-0058",
+      "priceRange": "$",
+      "servesCuisine": ["Coffee", "Cafe", "American"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "407 E Nopal St",
+        "addressLocality": "Carrizo Springs",
+        "addressRegion": "TX",
+        "postalCode": "78834",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "20:00"}
+      ],
+      "url": "https://hungbuilds.github.io/Gridiron-Cafe/"
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preload" as="image" href="images/hero-toast.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;1,500&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -330,6 +397,25 @@
 
   load();
 })();
+</script>
+
+<script>
+  (function(){
+    var burger = document.querySelector('.burger');
+    var navLinks = document.querySelector('.nav-links');
+    if (burger && navLinks) {
+      burger.addEventListener('click', function(){
+        var isOpen = navLinks.classList.toggle('open');
+        burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+      navLinks.querySelectorAll('a').forEach(function(link){
+        link.addEventListener('click', function(){
+          navLinks.classList.remove('open');
+          burger.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  })();
 </script>
 
 </body>

@@ -69,6 +69,17 @@ h1,h2,h3,h4{font-family:'Anton',sans-serif; font-weight:400; text-transform:uppe
 }
 .logo{font-family:'Anton',sans-serif; font-size:20px; color:var(--white); letter-spacing:0.02em;}
 .nav-links{display:none; align-items:center; gap:34px;}
+.nav-links.open{
+  display:flex; flex-direction:column; align-items:flex-start; gap:0;
+  position:absolute; top:100%; left:0; right:0; background:rgba(13,13,13,0.97);
+  padding:8px 28px 20px; border-bottom:1px solid var(--line-dark);
+}
+.nav-links.open a{padding:12px 0; width:100%; border-top:1px solid var(--line-dark);}
+.nav-links.open a:first-child{border-top:none;}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.burger span{transition:transform .2s ease, opacity .2s ease;}
 .nav-links a{
   font-family:'Barlow Condensed',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; font-size:14px;
   color:var(--white-dim); transition:color .15s ease;

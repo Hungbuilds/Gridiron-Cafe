@@ -4,6 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Terms of Use — Gridiron Cafe</title>
+<meta name="description" content="Terms of Use for the Gridiron Cafe website, serving Crystal City and Carrizo Springs, TX.">
+<link rel="canonical" href="https://hungbuilds.github.io/Gridiron-Cafe/terms.html">
+<link rel="icon" type="image/png" href="images/badge-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Terms of Use — Gridiron Cafe">
+<meta property="og:description" content="Terms of Use for the Gridiron Cafe website, serving Crystal City and Carrizo Springs, TX.">
+<meta property="og:image" content="https://hungbuilds.github.io/Gridiron-Cafe/images/logo.png">
+<meta property="og:url" content="https://hungbuilds.github.io/Gridiron-Cafe/terms.html">
+<meta property="og:site_name" content="Gridiron Cafe">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Terms of Use — Gridiron Cafe">
+<meta name="twitter:description" content="Terms of Use for the Gridiron Cafe website, serving Crystal City and Carrizo Springs, TX.">
+<meta name="twitter:image" content="https://hungbuilds.github.io/Gridiron-Cafe/images/logo.png">
+
+<meta name="theme-color" content="#0D0D0D">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -33,7 +50,7 @@
 
 <main class="wrap legal">
   <h1>Terms of Use</h1>
-  <span class="updated">Draft — needs review before publishing</span>
+  <span class="updated">Last updated: July 2026</span>
 
   <p>These Terms of Use govern your use of the Gridiron Cafe website (the "Site"), operated for Gridiron Cafe locations in Crystal City and Carrizo Springs, Texas. By using the Site, you agree to these terms.</p>
 
@@ -165,6 +182,25 @@
 
   load();
 })();
+</script>
+
+<script>
+  (function(){
+    var burger = document.querySelector('.burger');
+    var navLinks = document.querySelector('.nav-links');
+    if (burger && navLinks) {
+      burger.addEventListener('click', function(){
+        var isOpen = navLinks.classList.toggle('open');
+        burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+      navLinks.querySelectorAll('a').forEach(function(link){
+        link.addEventListener('click', function(){
+          navLinks.classList.remove('open');
+          burger.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  })();
 </script>
 
 </body>

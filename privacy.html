@@ -4,6 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — Gridiron Cafe</title>
+<meta name="description" content="Privacy Policy for the Gridiron Cafe website, serving Crystal City and Carrizo Springs, TX.">
+<link rel="canonical" href="https://hungbuilds.github.io/Gridiron-Cafe/privacy.html">
+<link rel="icon" type="image/png" href="images/badge-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy Policy — Gridiron Cafe">
+<meta property="og:description" content="Privacy Policy for the Gridiron Cafe website, serving Crystal City and Carrizo Springs, TX.">
+<meta property="og:image" content="https://hungbuilds.github.io/Gridiron-Cafe/images/logo.png">
+<meta property="og:url" content="https://hungbuilds.github.io/Gridiron-Cafe/privacy.html">
+<meta property="og:site_name" content="Gridiron Cafe">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy Policy — Gridiron Cafe">
+<meta name="twitter:description" content="Privacy Policy for the Gridiron Cafe website, serving Crystal City and Carrizo Springs, TX.">
+<meta name="twitter:image" content="https://hungbuilds.github.io/Gridiron-Cafe/images/logo.png">
+
+<meta name="theme-color" content="#0D0D0D">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -33,7 +50,7 @@
 
 <main class="wrap legal">
   <h1>Privacy Policy</h1>
-  <span class="updated">Draft — needs review before publishing</span>
+  <span class="updated">Last updated: July 2026</span>
 
   <p>This Privacy Policy explains how Gridiron Cafe collects and uses information through this website.</p>
 
@@ -172,6 +189,25 @@
 
   load();
 })();
+</script>
+
+<script>
+  (function(){
+    var burger = document.querySelector('.burger');
+    var navLinks = document.querySelector('.nav-links');
+    if (burger && navLinks) {
+      burger.addEventListener('click', function(){
+        var isOpen = navLinks.classList.toggle('open');
+        burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+      navLinks.querySelectorAll('a').forEach(function(link){
+        link.addEventListener('click', function(){
+          navLinks.classList.remove('open');
+          burger.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  })();
 </script>
 
 </body>
