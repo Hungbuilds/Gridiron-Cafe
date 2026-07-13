@@ -238,11 +238,7 @@ h1,h2,h3,h4{font-family:'Anton',sans-serif; font-weight:400; text-transform:uppe
 
 /* ---------- MINIMAL HERO VARIANT ---------- */
 .hero-min{
-<<<<<<< HEAD
   min-height:clamp(560px, 100vh, 880px); display:flex; flex-direction:column;
-=======
-  min-height:100vh; display:flex; flex-direction:column;
->>>>>>> 2d986bb86e3dd85ea57678093dc93f13b2969d87
   padding:0;
 }
 .hero-overlay-fade{
@@ -318,17 +314,12 @@ h1,h2,h3,h4{font-family:'Anton',sans-serif; font-weight:400; text-transform:uppe
   color:var(--white-dim);
 }
 .social-row a:hover{background:var(--white); border-color:var(--white); color:var(--black);}
-<<<<<<< HEAD
 .footer-word-mark{
   color:var(--white); font-family:'Barlow Condensed',sans-serif; font-weight:700;
   text-transform:uppercase; letter-spacing:0.1em; font-size:19px;
 }
 .footer-badge{display:inline-flex; align-items:center; gap:14px;}
 .footer-badge img{height:64px; width:64px; border-radius:50%;}
-=======
-.footer-badge{display:inline-flex; align-items:center; gap:12px;}
-.footer-badge img{height:46px; width:46px; border-radius:50%;}
->>>>>>> 2d986bb86e3dd85ea57678093dc93f13b2969d87
 .footer-bottom{font-size:12.5px; color:rgba(250,250,247,0.4); display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; border-top:1px solid var(--line-dark); padding-top:24px;}
 
 /* ---------- ACCESSIBILITY WIDGET ---------- */

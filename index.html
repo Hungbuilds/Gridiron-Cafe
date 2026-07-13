@@ -16,10 +16,7 @@
     <a href="#top" class="word-mark">Gridiron Cafe</a>
     <div class="nav-links">
       <a href="#menu">Menu</a>
-<<<<<<< HEAD
       <a href="#contact">Contact</a>
-=======
->>>>>>> 2d986bb86e3dd85ea57678093dc93f13b2969d87
       <a href="about.html">About</a>
     </div>
     <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -28,11 +25,7 @@
 
 <!-- HERO -->
 <header class="hero hero-min" id="top">
-<<<<<<< HEAD
   <img class="hero-photo-slot" src="images/hero-toast.jpg" alt="Two iced coffees from Gridiron Cafe held up in a toast" style="object-fit:cover; object-position:center 38%; width:100%; height:100%;">
-=======
-  <img class="hero-photo-slot" src="images/hero-toast.jpg" alt="Two iced coffees from Gridiron Cafe held up in a toast" style="object-fit:cover; object-position:top; width:100%; height:100%;">
->>>>>>> 2d986bb86e3dd85ea57678093dc93f13b2969d87
   <div class="hero-overlay hero-overlay-fade"></div>
   <div class="hero-min-content">
     <h1 class="tagline">Coffee. Food.<br>Community.</h1>
@@ -46,10 +39,7 @@
     <h2 class="ml-heading">One menu,<br>two locations.</h2>
     <p class="ml-sub">Same food, same prices, same mission — pick whichever's closer.</p>
 
-<<<<<<< HEAD
     <div id="contact" style="scroll-margin-top:100px;"></div>
-=======
->>>>>>> 2d986bb86e3dd85ea57678093dc93f13b2969d87
     <div class="loc-toggle" id="locToggle">
       <button data-loc="crystal" class="active">Crystal City</button>
       <button data-loc="carrizo">Carrizo Springs</button>
@@ -179,11 +169,7 @@
 <footer class="footer">
   <div class="wrap">
     <div class="footer-top">
-<<<<<<< HEAD
       <a href="index.html#top" class="footer-word-mark">Gridiron Cafe</a>
-=======
-      <a href="#top" class="logo"><img src="images/logo.png" alt="Gridiron Cafe" style="height:28px; width:auto; filter:brightness(0) invert(1);"></a>
->>>>>>> 2d986bb86e3dd85ea57678093dc93f13b2969d87
       <div class="social-row">
         <a href="https://www.instagram.com/gridiron_cafe/" aria-label="Instagram"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg></a>
         <a href="https://www.facebook.com/GridironNutrition830/" aria-label="Facebook"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8.5h2.5V5H15c-2.2 0-4 1.8-4 4v2.5H8.5V15H11v6h3v-6h2.5l.5-3.5H14V9c0-.3.2-.5.5-.5z"/></svg></a>
@@ -222,7 +208,6 @@
   const bannerImg2 = document.getElementById('locBannerImg2');
   const bannerPhotos = document.querySelector('.loc-banner-photos');
   const bannerInfo = document.querySelector('.loc-banner-info');
-<<<<<<< HEAD
 
   toggleButtons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -347,45 +332,6 @@
 
   load();
 })();
-=======
-
-  toggleButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      toggleButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const d = locData[btn.dataset.loc];
-      bannerImg1.style.opacity = 0;
-      bannerImg2.style.opacity = 0;
-      bannerInfo.style.opacity = 0;
-      setTimeout(() => {
-        bannerImg1.src = d.photos[0];
-        if (d.photos.length > 1) {
-          bannerImg2.src = d.photos[1];
-          bannerImg2.style.display = 'block';
-          bannerPhotos.classList.remove('single');
-        } else {
-          bannerImg2.style.display = 'none';
-          bannerPhotos.classList.add('single');
-        }
-        document.getElementById('locBannerTag').textContent = d.tag;
-        document.getElementById('locBannerAddr').textContent = d.addr;
-        document.getElementById('locBannerHours').innerHTML = d.hours.map(h =>
-          `<div class="hours-row"><span>${h[0]}</span><span>${h[1]}</span></div>`
-        ).join('');
-        const call = document.getElementById('locBannerPhone');
-        call.href = 'tel:' + d.phone;
-        call.textContent = d.phoneLabel;
-        bannerImg1.style.opacity = 1;
-        bannerImg2.style.opacity = 1;
-        bannerInfo.style.opacity = 1;
-      }, 150);
-    });
-  });
-
-  // Duplicate conveyor content for seamless infinite scroll
-  const conveyor = document.getElementById('conveyorTrack');
-  conveyor.innerHTML += conveyor.innerHTML;
->>>>>>> 2d986bb86e3dd85ea57678093dc93f13b2969d87
 </script>
 
 </body>
