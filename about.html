@@ -8,7 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;1,500&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
-  .about-hero{padding:0 0 56px; min-height:clamp(360px, 60vh, 560px); display:flex; flex-direction:column; justify-content:flex-end;}
+  .about-hero{padding:0 0 20px; aspect-ratio:4/3; display:flex; flex-direction:column; justify-content:flex-end;}
+  @media(min-width:640px){ .about-hero{aspect-ratio:16/10; padding-bottom:28px;} }
   .about-hero .wrap{text-align:right;}
   .about-hero .eyebrow{justify-content:flex-end;}
   .about-hero .eyebrow::before{display:none;}
@@ -35,7 +36,7 @@
   </div>
 </nav>
 
-<header class="about-hero" style="background-image:linear-gradient(180deg, rgba(13,13,13,0.3) 0%, rgba(13,13,13,0.55) 60%, rgba(13,13,13,0.85) 100%), url('images/story-nutrition.jpg'); background-size:cover; background-position:center;">
+<header class="about-hero" style="background-image:linear-gradient(180deg, rgba(13,13,13,0.3) 0%, rgba(13,13,13,0.55) 60%, rgba(13,13,13,0.85) 100%), url('images/story-nutrition.jpg'); background-size:cover; background-position:top center;">
   <div class="wrap">
     <div class="eyebrow on-dark about-hero-label">About Us</div>
   </div>
