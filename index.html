@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gridiron Cafe — Crystal City & Carrizo Springs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;1,500&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav nav-min">
+  <div class="nav-inner">
+    <a href="#top" class="word-mark">Gridiron Cafe</a>
+    <div class="nav-links">
+      <a href="#menu">Menu</a>
+      <a href="about.html">About</a>
+    </div>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero hero-min" id="top">
+  <img class="hero-photo-slot" src="images/hero-toast.jpg" alt="Two iced coffees from Gridiron Cafe held up in a toast" style="object-fit:cover; object-position:top; width:100%; height:100%;">
+  <div class="hero-overlay hero-overlay-fade"></div>
+  <div class="hero-min-content">
+    <h1 class="tagline">Coffee. Food.<br>Community.</h1>
+  </div>
+</header>
+
+<!-- ONE MENU, TWO LOCATIONS -->
+<section class="menu-locations" id="menu">
+  <div class="wrap">
+    <div class="eyebrow">One Cafe, One Menu</div>
+    <h2 class="ml-heading">One menu,<br>two locations.</h2>
+    <p class="ml-sub">Same food, same prices, same mission — pick whichever's closer.</p>
+
+    <div class="loc-toggle" id="locToggle">
+      <button data-loc="crystal" class="active">Crystal City</button>
+      <button data-loc="carrizo">Carrizo Springs</button>
+    </div>
+
+    <div class="loc-banner">
+      <div class="loc-banner-photos">
+        <img id="locBannerImg1" src="images/crystal-1.jpg" alt="Gridiron Cafe Crystal City interior">
+        <img id="locBannerImg2" src="images/crystal-2.jpg" alt="Gridiron Cafe Crystal City counter">
+      </div>
+      <div class="loc-banner-info">
+        <span class="tag" id="locBannerTag">Crystal City</span>
+        <p id="locBannerAddr">2206 US-83, Crystal City, TX 78839</p>
+        <div id="locBannerHours">
+          <div class="hours-row"><span>Mon – Fri</span><span>6:30 AM – 8:00 PM</span></div>
+          <div class="hours-row"><span>Saturday</span><span>8:00 AM – 7:00 PM</span></div>
+          <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+        </div>
+        <a href="tel:+18304485051" id="locBannerPhone" class="btn btn-outline-dark">Call (830) 448-5051</a>
+      </div>
+    </div>
+
+    <!-- MENU CONVEYOR -->
+    <div class="menu-conveyor">
+      <div class="conveyor-track" id="conveyorTrack">
+        <div class="cv-item"><img src="images/menu-coffee.jpg" alt="Coffee and cold brew" loading="lazy"><p>Coffee</p></div>
+        <div class="cv-item"><img src="images/menu-smoothies.jpg" alt="Frappe with whipped cream" loading="lazy"><p>Frappes</p></div>
+        <div class="cv-item"><img src="images/menu-breakfast.jpg" alt="Breakfast bagel sandwich" loading="lazy"><p>Breakfast</p></div>
+        <div class="cv-item"><img src="images/menu-deli.jpg" alt="Deli sandwich" loading="lazy"><p>Deli</p></div>
+        <div class="cv-item"><img src="images/menu-salads-new.jpg" alt="Grilled chicken salad" loading="lazy"><p>Salads</p></div>
+        <div class="cv-item"><img src="images/menu-burger.jpg" alt="Grilled chicken burger" loading="lazy"><p>Burgers</p></div>
+        <div class="cv-item"><img src="images/menu-wings-new.jpg" alt="Buffalo wings" loading="lazy"><p>Wings</p></div>
+        <div class="cv-item"><img src="images/menu-refreshers.jpg" alt="Fruit-infused refreshers" loading="lazy"><p>Refreshers</p></div>
+        <div class="cv-item"><img src="images/gallery-1.jpg" alt="Layered caramel iced coffee" loading="lazy"><p>Cold Brew</p></div>
+      </div>
+    </div>
+
+    <!-- FULL MENU -->
+    <div class="menu-full">
+      <div class="menu-col-block">
+        <h3>Coffee</h3>
+        <div class="menu-line"><span>House Coffee</span><span>$2.50 – $4.00</span></div>
+        <div class="menu-line"><span>Iced Coffee</span><span>$4.50 – $6.25</span></div>
+        <div class="menu-line"><span>Iced Lattes</span><span>$4.50 – $7.00</span></div>
+        <div class="menu-line"><span>Hot Lattes</span><span>$5.00 – $6.00</span></div>
+        <div class="menu-line"><span>Frappuccino</span><span>$6.00 – $8.00</span></div>
+        <p class="menu-note">Vanilla, caramel delight, caramel cookie butter, white chocolate, hazelnut, funnel cake, brown sugar and more. Add a shaken espresso shot, any flavor, +$0.50.</p>
+      </div>
+
+      <div class="menu-col-block">
+        <h3>Chai &amp; Teas</h3>
+        <div class="menu-line"><span>Chai (Hot/Cold)</span><span>$4.50 – $6.25</span></div>
+        <div class="menu-line"><span>Matcha Latte</span><span>$5.25 – $6.75</span></div>
+        <div class="menu-line"><span>Fruit-Infused Green Tea</span><span>$4.25 – $5.50</span></div>
+        <p class="menu-note">Original or ceremonial grade matcha — oatmilk, Dubai, strawberry, lavender. Fruit tea in passionfruit, strawberry, or peach.</p>
+      </div>
+
+      <div class="menu-col-block">
+        <h3>Smoothies &amp; Shakes</h3>
+        <div class="menu-line"><span>Smoothies</span><span>$6.50 – $10.00</span></div>
+        <div class="menu-line"><span>Protein Smoothies</span><span>$10.50</span></div>
+        <div class="menu-line"><span>Shakes</span><span>$6.50 – $7.50</span></div>
+        <div class="menu-line"><span>Blended Chillers</span><span>$6.50 – $7.50</span></div>
+        <p class="menu-note">Banana berry, mango fresh, strawberry banana, tropical, green machine and more. Boosters +$2: protein, energy, immune support, fiber, women's health, vitamin C.</p>
+      </div>
+
+      <div class="menu-col-block">
+        <h3>Hydration &amp; Energy</h3>
+        <div class="menu-line"><span>Gridiron Energy Hydration</span><span>$4.50 – $6.50</span></div>
+        <div class="menu-line"><span>Fizz Energy + Cold Foam</span><span>$5.00 – $5.75</span></div>
+        <div class="menu-line"><span>Revitalizing Refreshers</span><span>$5.75 – $7.75</span></div>
+        <p class="menu-note">Ocean breeze, watermelon cucumber, blueberry lemonade, strawberry acai, dragon fruit elderberry and more.</p>
+      </div>
+
+      <div class="menu-col-block">
+        <h3>Bowls</h3>
+        <div class="menu-line"><span>Açaí Bowls</span><span>$10.00</span></div>
+        <div class="menu-line"><span>Coconut Bowl (Paradise)</span><span>$10.00</span></div>
+        <div class="menu-line"><span>Matcha Bowl (Honey Matcha)</span><span>$10.00</span></div>
+        <div class="menu-line"><span>Build-Your-Own Yogurt</span><span>$6.50</span></div>
+        <p class="menu-note">Caribbean, tropical, or Chunky Monkey / PB Lovers açaí. Yogurt toppings include berries, granola, coconut, caramel and more.</p>
+      </div>
+
+      <div class="menu-col-block">
+        <h3>Breakfast</h3>
+        <div class="menu-line"><span>Waffles</span><span>$7.25</span></div>
+        <div class="menu-line"><span>Avocado Toast</span><span>from $7.50</span></div>
+        <div class="menu-line"><span>Bagels</span><span>$4.50</span></div>
+        <div class="menu-line"><span>Breakfast Sandwiches</span><span>$6.75</span></div>
+        <div class="menu-line"><span>Muffins</span><span>$3.55</span></div>
+        <div class="menu-line"><span>Brownies</span><span>$5.00</span></div>
+        <div class="menu-line"><span>Cinnamon Roll</span><span>$7.00</span></div>
+      </div>
+
+      <div class="menu-col-block">
+        <h3>Deli &amp; Wraps</h3>
+        <div class="menu-line"><span>Sandwiches</span><span>$9.25</span></div>
+        <div class="menu-line"><span>Wraps</span><span>$9.75</span></div>
+        <div class="menu-line"><span>Steak Wraps</span><span>$9.75</span></div>
+        <p class="menu-note">Texas, Gridiron, Club, Ham Belt, Chipotle Turkey sandwiches. Chicken Caesar, jalapeño ranch, bacon ranch, Cali turkey avocado wraps. Southwest, buffalo, or Cobb steak wraps.</p>
+      </div>
+
+      <div class="menu-col-block">
+        <h3>Salads &amp; Burgers</h3>
+        <div class="menu-line"><span>Salads</span><span>$7.99</span></div>
+        <div class="menu-line"><span>Add Grilled Chicken</span><span>+$3.00</span></div>
+        <div class="menu-line"><span>Chicken Burgers</span><span>$8.99</span></div>
+        <div class="menu-line"><span>Fully Loaded</span><span>+$1.00</span></div>
+        <p class="menu-note">Caesar, garden, mixed berry pecan, or buffalo chicken ranch salads. Grilled or crispy chicken burgers.</p>
+      </div>
+
+      <div class="menu-col-block">
+        <h3>Wings &amp; Sides</h3>
+        <div class="menu-line"><span>Wings, 8 pc</span><span>$9.99</span></div>
+        <div class="menu-line"><span>Wings, 12 pc</span><span>$14.99</span></div>
+        <div class="menu-line"><span>Waffle Fries</span><span>$4.00</span></div>
+        <div class="menu-line"><span>Sweet Potato Waffle Fries</span><span>$4.50</span></div>
+        <div class="menu-line"><span>Soup of the Day</span><span>$4.99</span></div>
+        <p class="menu-note">Air-fried wings in buffalo, lemon pepper, or honey BBQ. Soup rotates — chicken tortilla, chicken noodle, broccoli cheddar.</p>
+      </div>
+    </div>
+    <p class="menu-disclaimer">Prices current as of the in-store menu board — always subject to change. Menu and pricing are the same at both locations.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a href="#top" class="logo"><img src="images/logo.png" alt="Gridiron Cafe" style="height:28px; width:auto; filter:brightness(0) invert(1);"></a>
+      <div class="social-row">
+        <a href="https://www.instagram.com/gridiron_cafe/" aria-label="Instagram"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.facebook.com/GridironNutrition830/" aria-label="Facebook"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8.5h2.5V5H15c-2.2 0-4 1.8-4 4v2.5H8.5V15H11v6h3v-6h2.5l.5-3.5H14V9c0-.3.2-.5.5-.5z"/></svg></a>
+        <a href="https://www.tiktok.com/@gridiron_cafe" aria-label="TikTok"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4v10.5a3 3 0 1 1-3-3"/><path d="M14 4c.5 2.5 2.2 4 4.5 4.3"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-badge"><img src="images/badge-icon.png" alt="Gridiron Cafe badge">© 2026 Gridiron Cafe.</span>
+      <span><a href="terms.html" style="color:inherit;">Terms of Use</a> · <a href="privacy.html" style="color:inherit;">Privacy Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const locData = {
+    crystal: {
+      tag: "Crystal City",
+      addr: "2206 US-83, Crystal City, TX 78839",
+      hours: [["Mon – Fri","6:30 AM – 8:00 PM"],["Saturday","8:00 AM – 7:00 PM"],["Sunday","Closed"]],
+      phone: "+18304485051",
+      phoneLabel: "Call (830) 448-5051",
+      photos: ["images/crystal-1.jpg", "images/crystal-2.jpg"]
+    },
+    carrizo: {
+      tag: "Carrizo Springs",
+      addr: "407 E Nopal St, Carrizo Springs, TX 78834",
+      hours: [["Mon – Fri","7:00 AM – 8:00 PM"],["Saturday","Closed"],["Sunday","Closed"]],
+      phone: "+18302190058",
+      phoneLabel: "Call (830) 219-0058",
+      photos: ["images/carrizo-full.jpg"]
+    }
+  };
+
+  const toggleButtons = document.querySelectorAll('#locToggle button');
+  const bannerImg1 = document.getElementById('locBannerImg1');
+  const bannerImg2 = document.getElementById('locBannerImg2');
+  const bannerPhotos = document.querySelector('.loc-banner-photos');
+  const bannerInfo = document.querySelector('.loc-banner-info');
+
+  toggleButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      toggleButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const d = locData[btn.dataset.loc];
+      bannerImg1.style.opacity = 0;
+      bannerImg2.style.opacity = 0;
+      bannerInfo.style.opacity = 0;
+      setTimeout(() => {
+        bannerImg1.src = d.photos[0];
+        if (d.photos.length > 1) {
+          bannerImg2.src = d.photos[1];
+          bannerImg2.style.display = 'block';
+          bannerPhotos.classList.remove('single');
+        } else {
+          bannerImg2.style.display = 'none';
+          bannerPhotos.classList.add('single');
+        }
+        document.getElementById('locBannerTag').textContent = d.tag;
+        document.getElementById('locBannerAddr').textContent = d.addr;
+        document.getElementById('locBannerHours').innerHTML = d.hours.map(h =>
+          `<div class="hours-row"><span>${h[0]}</span><span>${h[1]}</span></div>`
+        ).join('');
+        const call = document.getElementById('locBannerPhone');
+        call.href = 'tel:' + d.phone;
+        call.textContent = d.phoneLabel;
+        bannerImg1.style.opacity = 1;
+        bannerImg2.style.opacity = 1;
+        bannerInfo.style.opacity = 1;
+      }, 150);
+    });
+  });
+
+  // Duplicate conveyor content for seamless infinite scroll
+  const conveyor = document.getElementById('conveyorTrack');
+  conveyor.innerHTML += conveyor.innerHTML;
+</script>
+
+</body>
+</html>
