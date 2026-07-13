@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gridiron Cafe — Crystal City & Carrizo Springs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo"><img src="images/logo.png" alt="Gridiron Cafe" style="height:40px; width:auto; filter:brightness(0) invert(1);"></a>
+      <a href="#menu">Menu</a>
+      <a href="#story">About</a>
+      <a href="#locations">Locations</a>
+    </div>
+    <div class="loc-switch" id="navLocSwitch">
+      <button data-loc="crystal" class="active">Crystal City</button>
+      <button data-loc="carrizo">Carrizo Springs</button>
+    </div>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <img class="hero-photo-slot" src="images/hero-toast.jpg" alt="Two iced coffees from Gridiron Cafe held up in a toast" style="object-fit:cover; width:100%; height:100%;">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="eyebrow on-dark">Gridiron Cafe</div>
+    <h1>Come as<br>you are.</h1>
+    <p class="hero-sub" id="heroSub">Coffee, smoothies, and real food from the same folks who built Gridiron Fitness — no membership required, just walk in.</p>
+    <div class="hero-ctas">
+      <a href="#order" class="btn btn-solid-white">Order Online</a>
+      <a href="#menu" class="btn btn-outline-light">See the Menu</a>
+      <a href="#story" class="btn btn-outline-light">Our Story</a>
+    </div>
+  </div>
+</header>
+
+<!-- TICKER -->
+<div class="ticker-strip">
+  <div class="ticker-track" id="tickerTrack">
+    <span>OPEN DAILY IN CRYSTAL CITY</span>
+    <span>NOW OPEN IN CARRIZO SPRINGS</span>
+    <span>COFFEE · SMOOTHIES · AÇAÍ BOWLS</span>
+    <span>BUILT BY THE SAME TEAM AS GRIDIRON FITNESS</span>
+    <span>NO WORKOUT REQUIRED — JUST WALK IN</span>
+  </div>
+</div>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="wrap story-grid">
+    <div>
+      <div class="eyebrow on-dark">Our Story</div>
+      <h2>[ Story headline goes here ]</h2>
+      <p style="color:rgba(250,250,247,0.4); font-style:italic;">[ Story copy placeholder — waiting on direction from Jay for this section. ]</p>
+    </div>
+    <img class="story-photo-slot" src="images/story-nutrition.jpg" alt="Gridiron Cafe drinks in front of the Gridiron Nutrition sign" loading="lazy" style="object-fit:cover; width:100%; height:100%;">
+  </div>
+</section>
+
+<!-- MENU PREVIEW -->
+<section class="menu-preview" id="menu">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">On The Menu</div>
+      <h2>Food that tastes good and happens to be good for you.</h2>
+      <p>No calorie-counting, no lecture — just coffee and food worth coming back for.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-cat">
+        <img src="images/menu-coffee.jpg" alt="Bottled cold brew coffee" loading="lazy" style="width:100%; aspect-ratio:4/3; object-fit:cover; margin-bottom:18px;">
+        <span class="num">01</span><h3>Coffee &amp; Cold Brew</h3><p>House coffee, iced coffee, frappuccinos, cold brew by the bottle.</p>
+      </div>
+      <div class="menu-cat">
+        <img src="images/menu-smoothies.jpg" alt="Whipped cream topped frappe" loading="lazy" style="width:100%; aspect-ratio:4/3; object-fit:cover; margin-bottom:18px;">
+        <span class="num">02</span><h3>Frappuccinos</h3><p>Caramel, hazelnut, s'mores, brown sugar and more.</p>
+      </div>
+      <div class="menu-cat">
+        <img src="images/menu-breakfast.jpg" alt="Breakfast bagel sandwich with egg, bacon and cheese" loading="lazy" style="width:100%; aspect-ratio:4/3; object-fit:cover; margin-bottom:18px;">
+        <span class="num">03</span><h3>Breakfast</h3><p>Waffles, bagels, muffins, breakfast sandwiches.</p>
+      </div>
+      <div class="menu-cat" style="display:flex; flex-direction:column; justify-content:center; background:var(--off); aspect-ratio:auto;">
+        <span class="num">04</span><h3>Smoothies &amp; Bowls</h3><p style="color:var(--ink-dim); font-style:italic;">[ Photo needed — açaí, coconut &amp; matcha bowls, fruit smoothies ]</p>
+      </div>
+      <div class="menu-cat">
+        <img src="images/menu-deli.jpg" alt="Deli sandwich with turkey, lettuce and tomato" loading="lazy" style="width:100%; aspect-ratio:4/3; object-fit:cover; margin-bottom:18px;">
+        <span class="num">05</span><h3>Deli &amp; Wraps</h3><p>Texas, Gridiron, Club and Chipotle Turkey sandwiches, wraps.</p>
+      </div>
+      <div class="menu-cat">
+        <img src="images/menu-salads.jpg" alt="Chicken berry salads with raspberry vinaigrette" loading="lazy" style="width:100%; aspect-ratio:4/3; object-fit:cover; margin-bottom:18px;">
+        <span class="num">06</span><h3>Salads</h3><p>Grilled or crispy chicken, fresh berries, house dressings.</p>
+      </div>
+      <div class="menu-cat">
+        <img src="images/menu-wings.jpg" alt="Chicken wings with waffle fries" loading="lazy" style="width:100%; aspect-ratio:4/3; object-fit:cover; margin-bottom:18px;">
+        <span class="num">07</span><h3>Wings &amp; Waffle Fries</h3><p>Air-fried wings, buffalo or honey BBQ, sweet potato fries.</p>
+      </div>
+      <div class="menu-cat">
+        <img src="images/menu-refreshers.jpg" alt="Row of colorful fruit-infused refreshers" loading="lazy" style="width:100%; aspect-ratio:4/3; object-fit:cover; margin-bottom:18px;">
+        <span class="num">08</span><h3>Teas &amp; Refreshers</h3><p>Chai, matcha, fruit-infused tea, energy and hydration drinks.</p>
+      </div>
+    </div>
+    <div class="menu-cta-row">
+      <a href="menu.html" class="btn btn-outline-dark">View Full Menu &amp; Prices</a>
+    </div>
+  </div>
+</section>
+
+<!-- SEASONAL BANNER -->
+<section style="position:relative; min-height:52vh; display:flex; align-items:center; justify-content:center; text-align:center; background-image:linear-gradient(180deg, rgba(13,13,13,0.35) 0%, rgba(13,13,13,0.75) 100%), url('images/gallery-4.jpg'); background-size:cover; background-position:center 30%;">
+  <div class="wrap">
+    <div class="eyebrow on-dark" style="justify-content:center;">Always Something New</div>
+    <h2 style="color:var(--white); font-size:clamp(28px,4.5vw,42px); margin-bottom:14px;">Seasonal drinks rotate all year.</h2>
+    <p style="color:var(--white-dim); max-width:480px; margin:0 auto 26px;">Follow Instagram for the current lineup — these change throughout the year and aren't always on the standing menu.</p>
+    <a href="https://www.instagram.com/gridiron_cafe/" class="btn btn-outline-light">See What's Current</a>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="eyebrow">From The Cafe</div>
+    <h2 style="font-size:clamp(28px,4vw,40px); color:var(--ink); margin-bottom:40px;">A few of our favorites.</h2>
+    <div class="gallery-grid">
+      <img src="images/gallery-1.jpg" alt="Layered caramel iced coffee" loading="lazy">
+      <img src="images/gallery-2.jpg" alt="Loaded buffalo chicken bites" loading="lazy">
+      <img src="images/menu-toast.jpg" alt="Nutella toast with banana and strawberry" loading="lazy">
+      <img src="images/gallery-5.jpg" alt="Blue and green frappe outdoors" loading="lazy">
+      <img src="images/gallery-6.jpg" alt="Gridiron Cafe summer frappe lineup" loading="lazy">
+      <img src="images/menu-smoothies.jpg" alt="Frappuccino with whipped cream and caramel" loading="lazy">
+    </div>
+    <p style="margin-top:20px; font-size:12.5px; color:var(--ink-dim);">Some items shown here are seasonal or limited-time — check with the cafe for current availability.</p>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section class="locations" id="locations" style="background-image:linear-gradient(180deg, rgba(15,15,15,0.55) 0%, rgba(15,15,15,0.75) 40%, rgba(13,13,13,0.96) 100%), url('images/gallery-3.jpg'); background-size:cover; background-position:center;">
+  <div class="wrap">
+    <div class="eyebrow on-dark">Same Highway, Two Stops</div>
+    <h2 style="font-size:clamp(28px,4vw,40px); color:var(--white); margin-bottom:8px;">12 miles down US-83.</h2>
+    <p style="color:var(--white-dim); max-width:460px; margin-bottom:56px;">One cafe, one mission, two exits off the same road.</p>
+
+    <div class="route-strip">
+      <button class="route-stop active" data-loc="crystal">
+        <span class="dot"></span>
+        <span class="stop-label">Crystal City</span>
+        <span class="stop-sub">Mile 0</span>
+      </button>
+      <div class="route-line"><span class="route-distance">12 MI · 17 MIN</span></div>
+      <button class="route-stop" data-loc="carrizo">
+        <span class="dot"></span>
+        <span class="stop-label">Carrizo Springs</span>
+        <span class="stop-sub">Mile 12</span>
+      </button>
+    </div>
+
+    <div class="loc-display">
+      <div class="loc-photo">
+        <img id="locPhoto" src="images/gallery-1.jpg" alt="Gridiron Cafe Crystal City">
+      </div>
+      <div class="loc-info">
+        <span class="tag" id="locTag">Crystal City</span>
+        <h3 id="locName">Gridiron Cafe</h3>
+        <div class="addr" id="locAddr">2206 US-83, Crystal City, TX 78839</div>
+        <div id="locHours">
+          <div class="hours-row"><span>Mon – Fri</span><span>6:30 AM – 8:00 PM</span></div>
+          <div class="hours-row"><span>Saturday</span><span>8:00 AM – 7:00 PM</span></div>
+          <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+        </div>
+        <div class="loc-actions">
+          <a href="tel:+18304485051" class="btn btn-outline-light" id="locCall">Call (830) 448-5051</a>
+          <a href="#order" class="btn btn-solid-white">Order Online</a>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:20px; font-size:12.5px; color:var(--white-dim);">Hours shown are approximate — confirm with Jay before this goes live. Location photos are placeholders until we get shots from each specific store.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a href="#top" class="logo"><img src="images/logo.png" alt="Gridiron Cafe" style="height:32px; width:auto; filter:brightness(0) invert(1);"></a>
+      <div class="social-row">
+        <a href="https://www.instagram.com/gridiron_cafe/" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com/GridironNutrition830/" aria-label="Facebook">FB</a>
+        <a href="https://www.tiktok.com/@gridiron_cafe" aria-label="TikTok">TT</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Gridiron Cafe. Crystal City &amp; Carrizo Springs, TX.</span>
+      <span><a href="terms.html" style="color:inherit;">Terms of Use</a> · <a href="privacy.html" style="color:inherit;">Privacy Policy</a> · Part of the Gridiron Fitness family.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Location data — drives both the nav pill switcher and the route-strip display
+  const locData = {
+    crystal: {
+      sub: "Coffee, smoothies, and real food from the same folks who built Gridiron Fitness — no membership required, just walk in.",
+      tag: "Crystal City",
+      name: "Gridiron Cafe",
+      addr: "2206 US-83, Crystal City, TX 78839",
+      hours: [["Mon – Fri","6:30 AM – 8:00 PM"],["Saturday","8:00 AM – 7:00 PM"],["Sunday","Closed"]],
+      phone: "+18304485051",
+      phoneLabel: "Call (830) 448-5051",
+      photo: "images/gallery-1.jpg"
+    },
+    carrizo: {
+      sub: "Same Gridiron Cafe you know from Crystal City, now just down the road — no membership required, just walk in.",
+      tag: "Carrizo Springs",
+      name: "Gridiron Cafe CS",
+      addr: "407 E Nopal St, Carrizo Springs, TX 78834",
+      hours: [["Mon – Fri","7:00 AM – 8:00 PM"],["Saturday","Closed"],["Sunday","Closed"]],
+      phone: "+18302190058",
+      phoneLabel: "Call (830) 219-0058",
+      photo: "images/menu-deli.jpg"
+    }
+  };
+
+  function renderLocation(loc) {
+    const d = locData[loc];
+    const photo = document.getElementById('locPhoto');
+    const info = document.querySelector('.loc-info');
+    photo.style.opacity = 0;
+    info.style.opacity = 0;
+    setTimeout(() => {
+      photo.src = d.photo;
+      document.getElementById('locTag').textContent = d.tag;
+      document.getElementById('locName').textContent = d.name;
+      document.getElementById('locAddr').textContent = d.addr;
+      document.getElementById('locHours').innerHTML = d.hours.map(h =>
+        `<div class="hours-row"><span>${h[0]}</span><span>${h[1]}</span></div>`
+      ).join('');
+      const call = document.getElementById('locCall');
+      call.href = 'tel:' + d.phone;
+      call.textContent = d.phoneLabel;
+      photo.style.opacity = 1;
+      info.style.opacity = 1;
+    }, 150);
+  }
+
+  const navButtons = document.querySelectorAll('#navLocSwitch button');
+  const routeStops = document.querySelectorAll('.route-stop');
+  const heroSub = document.getElementById('heroSub');
+
+  function setActiveLocation(loc, scrollTo) {
+    navButtons.forEach(b => b.classList.toggle('active', b.dataset.loc === loc));
+    routeStops.forEach(b => b.classList.toggle('active', b.dataset.loc === loc));
+    heroSub.textContent = locData[loc].sub;
+    renderLocation(loc);
+    if (scrollTo) {
+      document.querySelector('.loc-display').scrollIntoView({behavior:'smooth', block:'center'});
+    }
+  }
+
+  navButtons.forEach(btn => btn.addEventListener('click', () => setActiveLocation(btn.dataset.loc, true)));
+  routeStops.forEach(btn => btn.addEventListener('click', () => setActiveLocation(btn.dataset.loc, false)));
+
+  // Duplicate ticker content for seamless infinite scroll
+  const track = document.getElementById('tickerTrack');
+  track.innerHTML += track.innerHTML;
+</script>
+
+</body>
+</html>
